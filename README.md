@@ -57,8 +57,9 @@ This project was created by [Soumyadeep Das](https://github.com/Soumya-glitch-ch
 ## Acknowledgments
 I want to acknowledge the following resources for their help in creating this project:
 
-- Pygame Documentation: https://www.pygame.org/docs/
-- Space Invaders Wikipedia Article: https://en.wikipedia.org/wiki/Space_Invaders
+- Pygame Documentation : https://www.pygame.org/docs/
+- Pygame tutorials : https://www.youtube.com/@freecodecamp
+- Space Invaders Wikipedia Article : https://en.wikipedia.org/wiki/Space_Invaders
 <br>
 
 <b><i>Feel free to contribute to this project by submitting issues, feature requests, or pull requests. I welcome any and every feedback or improvement to make the level of this Pygame even more accurate and valuable.<i><b>
