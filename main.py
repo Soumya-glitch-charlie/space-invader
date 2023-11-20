@@ -136,7 +136,7 @@ while running:
     # enemy movement tracker
     for i in range(num_enemy):
         # Game Over
-        if enemyposition_Y[i] > 269:
+        if enemyposition_Y[i] > 369:
             for j in range(num_enemy):
                 enemyposition_Y[j] = 2000
             game_over_text()
