@@ -66,7 +66,6 @@ replay_button_font = pygame.font.Font("Fatal Fighter.ttf", 40)
 
 # Funtion definition
 
-
 def score_create(x, y):
     score_value = font.render("Your Score: " + str(score), True, (255, 255, 255))
     gamescreen.blit(score_value, (x, y))
