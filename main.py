@@ -58,10 +58,10 @@ textX = 10
 textY = 10
 
 # Game Over text
-over_font = pygame.font.Font("Fatal Fighter.ttf", 69)
+over_font = pygame.font.Font("Fatal Fighter.ttf", 45)
 
 # Replay text
-replay_button_font = pygame.font.Font("Fatal Fighter.ttf", 69)
+replay_button_font = pygame.font.Font("Fatal Fighter.ttf", 45)
 
 
 # Funtion definition
@@ -78,7 +78,7 @@ def game_over_text():
 
 
 def replay_game_text():
-    replay_text = replay_button_font.render("REPLAY :-)", True, (255, 255, 255))
+    replay_text = replay_button_font.render("REPLAY(Press-Mouse-Button) :-)", True, (255, 255, 255))
     gamescreen.blit(replay_text, (230, 300))
 
 
