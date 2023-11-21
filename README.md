@@ -21,7 +21,7 @@ The objective of the game is to defend your spaceship from the invading aliens b
 
 ## Installation
 
-To install the game, you will need to have Python 3 and Pygame installed on your system. You can install Pygame using pip:
+To install the game, you will need to have Python3 installed beforehand on your system. You can install Pygame using pip:
  ```bash
  pip install pygame
  pip install random
