@@ -58,10 +58,10 @@ textX = 10
 textY = 10
 
 # Game Over text
-over_font = pygame.font.Font("Fatal Fighter.ttf", 45)
+over_font = pygame.font.Font("Fatal Fighter.ttf", 40)
 
 # Replay text
-replay_button_font = pygame.font.Font("Fatal Fighter.ttf", 45)
+replay_button_font = pygame.font.Font("Fatal Fighter.ttf", 40)
 
 
 # Funtion definition
@@ -73,12 +73,12 @@ def score_create(x, y):
 
 
 def game_over_text():
-    GO_text = over_font.render("GAME OVER!! :-( ", True, (255, 255, 255))
+    GO_text = over_font.render("GAME OVER!! :-(", True, (255, 255, 255))
     gamescreen.blit(GO_text, (230, 200))
 
 
 def replay_game_text():
-    replay_text = replay_button_font.render("REPLAY(Press-Mouse-Button) :-)", True, (255, 255, 255))
+    replay_text = replay_button_font.render("REPLAY (Press-Mouse-Button)", True, (255, 255, 255))
     gamescreen.blit(replay_text, (230, 300))
 
 
