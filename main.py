@@ -47,7 +47,7 @@ bullet_image = pygame.image.load("bullets.png")
 bulletposition_X = 0
 bulletposition_Y = 500
 bulletpositionX_change = 0
-bulletpositionY_change = 10
+bulletpositionY_change = 15
 bullet_state = "ready"
 
 
@@ -56,19 +56,32 @@ score = 0
 font = pygame.font.Font("Fatal Fighter.ttf", 30)
 textX = 10
 textY = 10
-# Game Over text
-over_font = pygame.font.Font("Fatal Fighter.ttf", 90)
 
-# function creation
+# Game Over text
+over_font = pygame.font.Font("Fatal Fighter.ttf", 69)
+
+# Replay text
+replay_button_font = pygame.font.Font("Fatal Fighter.ttf", 69)
+
+
+# Funtion definition
+
+
 def score_create(x, y):
-    score_value = font.render("Score: " + str(score), True, (255, 255, 255))
+    score_value = font.render("Your Score: " + str(score), True, (255, 255, 255))
     gamescreen.blit(score_value, (x, y))
 
+
 def game_over_text():
-    GO_text = over_font.render("GAME OVER!! :'( " ,True, (255, 255, 255))
-    gamescreen.blit(GO_text, (190, 250))
-    
-    
+    GO_text = over_font.render("GAME OVER!! :-( ", True, (255, 255, 255))
+    gamescreen.blit(GO_text, (230, 200))
+
+
+def replay_game_text():
+    replay_text = replay_button_font.render("REPLAY :-)", True, (255, 255, 255))
+    gamescreen.blit(replay_text, (230, 300))
+
+
 def player(x, y):
     gamescreen.blit(ship_image, (x, y))
 
@@ -110,9 +123,9 @@ while running:
         # basically to check the keystroke whether it is pressed right or left
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                playerpositionX_change = -4.5
+                playerpositionX_change = -7
             if event.key == pygame.K_RIGHT:
-                playerpositionX_change = 4.5
+                playerpositionX_change = 7
             if event.key == pygame.K_SPACE:
                 if bullet_state == "ready":
                     bullet_sound = mixer.Sound("laser.wav")
@@ -121,7 +134,16 @@ while running:
                     # get the current x coordinate of space ship
                     bulletposition_X = playerposition_X
                     fire_bullet(bulletposition_X, bulletposition_Y)
+        
+        # restart the game
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            # Reset the game state
+                score = 0
+                for i in range(num_enemy):
+                    enemyposition_X[i] = random.randint(0, 835)
+                    enemyposition_Y[i] = random.randint(50, 100)
 
+        
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerpositionX_change = 0
@@ -136,18 +158,23 @@ while running:
     # enemy movement tracker
     for i in range(num_enemy):
         # Game Over
-        if enemyposition_Y[i] > 269:
+        if enemyposition_Y[i] > 369:
             for j in range(num_enemy):
                 enemyposition_Y[j] = 2000
             game_over_text()
+        
+        if enemyposition_Y[i] > 369:
+            for j in range(num_enemy):
+                enemyposition_Y[j] = 2000
+            replay_game_text()
             break
-            
+        
         enemyposition_X[i] += enemypositionX_change[i]
         if enemyposition_X[i] <= 0:
-            enemypositionX_change[i] = 3
+            enemypositionX_change[i] = 4.56
             enemyposition_Y[i] += enemypositionY_change[i]
         elif enemyposition_X[i] >= 836:
-            enemypositionX_change[i] = -3
+            enemypositionX_change[i] = -5.67
             enemyposition_Y[i] += enemypositionY_change[i]
 
         # Collision detection with enemy
