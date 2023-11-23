@@ -1,7 +1,7 @@
-﻿<h1 align="center">:-: Space-Invaders :-:</h1>
+<h1 align="center">:-: Space-Invaders :-:</h1>
 <br>
 
-## Space Invaders - A Pygame Recreation
+## Space Invaders :- A Pygame Recreation
 
 classic Space Invaders arcade game
 
@@ -17,6 +17,7 @@ The objective of the game is to defend your spaceship from the invading aliens b
 - Left arrow key : Move ship left
 - Right arrow key : Move ship right
 - Space bar : Shoot
+- Any Mouse Click : Restart the Game
 <br>
 
 ## Installation
@@ -46,13 +47,16 @@ The game includes the following features:
 - Different Levels of Difficulty
 <br>
 
+
 ## Contributing
 If you want to contribute to this project, please submit pull requests with your changes.
 <br>
 
+
 ## Credits
 This project was created by [Soumyadeep Das](https://github.com/Soumya-glitch-charlie).
 <br>
+
 
 ## Acknowledgments
 I want to acknowledge the following resources for their help in creating this project:
@@ -61,5 +65,6 @@ I want to acknowledge the following resources for their help in creating this pr
 - Pygame tutorials : https://www.youtube.com/@freecodecamp
 - Space Invaders Wikipedia Article : https://en.wikipedia.org/wiki/Space_Invaders
 <br>
+
 
 <b><i>Feel free to contribute to this project by submitting issues, feature requests, or pull requests. I welcome any and every feedback or improvement to make the level of this Pygame even more accurate and valuable.<i><b>
