@@ -50,9 +50,9 @@ The game includes the following features:
 - Different Levels of Difficulty
 <br>
 
-
 ## Contributing
 If you want to contribute to this project, please submit pull requests with your changes.
+<br>
 <br>
 <br>
 
