@@ -21,7 +21,6 @@ The objective of the game is to defend your spaceship from the invading aliens b
 - Space bar : Shoot
 - Any Mouse Click : Restart the Game
 <br>
-<br>
 
 ## Installation
 
@@ -34,7 +33,7 @@ To install the game, you will need to have Python3 installed beforehand on your 
 <br>
 
 Once you have installed the dependencies, you can clone the repository and run the game using the following commands:
-```bash
+ ```bash 
 git clone https://github.com/Soumya-glitch-charlie/space-invaders-pygame.git
 cd space-invaders-pygame
 python main.py
